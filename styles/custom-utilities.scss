@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Sanomat App Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sanomat App Light'), url('../styles/fonts/SanomatGrabApp/Sanomat Grab App-Light TH.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sanomat App Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sanomat App Regular'), url('../styles/fonts/SanomatGrabApp/Sanomat Grab App-Regular TH.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sanomat App Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sanomat App Medium'), url('../styles/fonts/SanomatGrabApp/Sanomat Grab App-Medium TH.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sanomat App Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sanomat App Bold'), url('../styles/fonts/SanomatGrabApp/Sanomat Grab App-Bold.ttf') format('truetype');
+}
+
+html {
+  font-family: 'Sanomat App Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  // -webkit-font-smoothing: antialiased;
+}
+
+.font-medium {
+  font-family: 'Sanomat App Medium', sans-serif;
+}
+
+.font-bold {
+  font-family: 'Sanomat App Bold', sans-serif;
+}

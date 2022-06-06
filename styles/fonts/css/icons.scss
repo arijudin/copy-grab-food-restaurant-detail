@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'icomoon';
+  // src: url('./IcoMoon.eot');
+  src: url('./icomoon.svg') format('svg'), url('./icomoon.woff') format('woff'), url('./icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icomoon {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+
+[data-icon]:before {
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: attr(data-icon);
+  speak: none;
+  font-variant: normal;
+}
+
+.icon-facebook:before {
+  content: "\e906";
+}
+
+.icon-instagram:before {
+  content: "\e90b";
+}
+
+.icon-twitter:before {
+  content: "\e90a";
+}
+
+.arrow-down-dark:before {
+  content: "\e903";
+}
