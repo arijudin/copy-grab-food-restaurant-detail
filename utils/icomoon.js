@@ -43,8 +43,20 @@ const GeoIcon = (props) => {
   )
 }
 
+const CevronRight = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill={`${props.fill ?? 'currentColor'}`} className={`${props.className ?? ''}`} width="8" height="12" viewBox="0 0 8 12">
+        <g fill="none" fillRule="evenodd">
+            <path d="M-4-2h16v16H-4z"/>
+            <path fill="#676767" fillRule="nonzero" d="M6.195 6L.862 11.333l.471.472L7.138 6 1.333.195.862.667z"/>
+        </g>
+    </svg>
+  )
+}
+
 export {
   Plus,
   CartDefault,
-  GeoIcon
+  GeoIcon,
+  CevronRight
 }

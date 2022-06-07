@@ -6,8 +6,29 @@ import { Popover, Transition, Dialog } from '@headlessui/react'
 import { Fragment } from 'react'
 import axios from 'axios'
 import Link from 'next/link'
+import { CevronRight } from '../utils/icomoon'
+import { classNames } from '../utils/functions'
 
 const menusURL = '/api/menus'
+
+const pages = [
+  {
+    position: 1,
+    name: 'Home',
+    href: 'https://food.grab.com/id/en/',
+    current: false,
+  }, {
+    position: 2,
+    name: 'Restaurant',
+    href: 'https://food.grab.com/id/en/restaurants',
+    current: false,
+  }, {
+    position: 3,
+    name: 'Do Yan Seafood - Sumbersekar',
+    href: 'https://food.grab.com',
+    current: true,
+  }
+]
 
 const Home = () => {
 	const [categories, setCategories] = useState([])
@@ -42,6 +63,44 @@ const Home = () => {
         <Head>
           <title>Copy Trial | GrabFood ID</title>
         </Head>
+        <div className='bg-white'>
+          <div className='w-full max-w-7xl my-0 mx-auto'>
+            <div className='px-3 md:px-9 lg:px-10 pt-12 pb-4'>
+              <nav aria-label='Breadcrumb'>
+                <ol role='list' className='flex items-center space-x-2'>
+                  {pages.map((page, key) => (
+                  <li key={key}>
+                    <div className='flex items-center'>
+                      { key != 0 ?
+                        <CevronRight className='w-4 h-4' /> : null
+                      }
+                      { !page.current ?
+                        <Link href={page.href} passHref>
+                          <a
+                            className={ classNames(
+                              page.current ? 'text-[#1c1c1c] select-none' : 'text-[#00a5cf] hover:text-[#1ebd60]',
+                              key == 0 ? '' : 'ml-2',
+                              'text-base transition-all duration-300 ease-in-out tracking-[-0.64px]'
+                            )}
+                            aria-current={page.current ? 'page' : undefined}
+                          >
+                            {page.name}
+                          </a>
+                        </Link> :
+                        <span className='text-[#1c1c1c] ml-2 text-base hover:cursor-auto tracking-[-0.64px]'
+                          aria-current={page.current ? 'page' : undefined}
+                        >
+                          {page.name}
+                        </span>
+                      }
+                    </div>
+                  </li>
+                ))} 
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
         <div className='w-full max-w-7xl my-0 mx-auto'>
           <div className='px-3 md:px-9 lg:px-10 py-[72px]'>
             { categories.map((row, key) => (
@@ -51,7 +110,7 @@ const Home = () => {
                 </h2>
                 <div className='grid grid-cols-3 gap-6'>
                   { row.items.map((item, id) => (
-                    <Popover className="relative" key={id}>
+                    <Popover className='relative' key={id}>
                       {({ open }) => (
                         <>
                           <Dialog as='div' className='fixed z-[2] inset-0 overflow-y-auto'
@@ -83,14 +142,14 @@ const Home = () => {
                           </Popover.Button>
                           <Transition
                             as={Fragment}
-                            enter="transition ease-out duration-200"
-                            enterFrom="opacity-0 translate-y-1"
-                            enterTo="opacity-100 translate-y-0"
-                            leave="transition ease-in duration-150"
-                            leaveFrom="opacity-100 translate-y-0"
-                            leaveTo="opacity-0 translate-y-1"
+                            enter='transition ease-out duration-200'
+                            enterFrom='opacity-0 translate-y-1'
+                            enterTo='opacity-100 translate-y-0'
+                            leave='transition ease-in duration-150'
+                            leaveFrom='opacity-100 translate-y-0'
+                            leaveTo='opacity-0 translate-y-1'
                           >
-                            <Popover.Panel className="absolute left-0 right-3 bottom-0 z-10 mt-3 -translate-y-[18px] transform" ref={selectionRef}>
+                            <Popover.Panel className='absolute left-0 right-3 bottom-0 z-10 mt-3 -translate-y-[18px] transform' ref={selectionRef}>
                               <style jsx>{
                                 `
                                   .shadow-custom {
@@ -112,9 +171,9 @@ const Home = () => {
                                   }
                                 `
                               }</style>
-                              <div className="overflow-hidden rounded-md shadow-custom">
+                              <div className='overflow-hidden rounded-md shadow-custom'>
                                 <div className='arrow-custom'></div>
-                                <div className="bg-white p-4">
+                                <div className='bg-white p-4'>
                                   <div className='flex justify-between items-center w-full gap-2 text-sm font-medium'>
                                     <p className='text-[#1c1c1c]'>Please login to add this item to your basket.</p>
                                     <Popover.Button className='px-[15px] rounded-md bg-[#00b14f] hover:bg-[#1ebd60] text-white h-[48px] transition-all duration-300 ease-in-out touch-manipulation select-none'
