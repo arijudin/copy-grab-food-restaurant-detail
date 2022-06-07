@@ -112,12 +112,12 @@ const Home = () => {
                                   }
                                 `
                               }</style>
-                              <div className="overflow-hidden rounded-[6px] shadow-custom">
+                              <div className="overflow-hidden rounded-md shadow-custom">
                                 <div className='arrow-custom'></div>
                                 <div className="bg-white p-4">
                                   <div className='flex justify-between items-center w-full gap-2 text-sm font-medium'>
                                     <p className='text-[#1c1c1c]'>Please login to add this item to your basket.</p>
-                                    <Popover.Button className='px-[15px] rounded-[6px] bg-[#00b14f] hover:bg-[#1ebd60] text-white h-[48px] transition-all duration-300 ease-in-out touch-manipulation select-none'
+                                    <Popover.Button className='px-[15px] rounded-md bg-[#00b14f] hover:bg-[#1ebd60] text-white h-[48px] transition-all duration-300 ease-in-out touch-manipulation select-none'
                                       ref={selectionRef}
                                       onClick={() => (setOverlay)}
                                       type='button'>
