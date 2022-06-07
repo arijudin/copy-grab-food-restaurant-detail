@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Icon from '../utils/icomoonIcons'
+import Icon from '../utils/Icons'
 import { Fragment, useState, useRef } from 'react'
-import { Listbox, Dialog, Transition } from '@headlessui/react'
+import { Listbox, Transition } from '@headlessui/react'
 import { classNames } from '../utils/functions'
 
 const countries = [
@@ -72,7 +72,7 @@ const languages = [
 ]
 
 
-function Footer() {
+const Footer = () => {
   const [selected, setSelected] = useState(languages[1])
   const selectionRef = useRef(null)
 
@@ -113,7 +113,7 @@ function Footer() {
                               leaveTo='opacity-0'
                             >
                                 <Listbox.Options className='absolute right-0 w-full min-w-[195px] bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm z-[13]'>
-                                  {languages.map((lang) => (
+                                  { languages.map((lang) => (
                                     <Listbox.Option
                                       key={lang.id}
                                       className={({ active }) =>

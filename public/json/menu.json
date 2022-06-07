@@ -1,0 +1,1844 @@
+{
+  "menu": {
+    "categories": [{
+      "ID": "IDCAT20220126140535015342",
+      "name": "Today's Offer",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20220126140536016410",
+        "name": "Chicken Pop Barbeque \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140536016410/photo/afcd0975_3c568fd9625.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140536016410/detail/afcd0975_3c568fd9625.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20220126140537018454",
+        "name": "Chicken Pop Teriyaki \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140537018454/photo/1a3a56a8_7b507516bc3.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140537018454/detail/1a3a56a8_7b507516bc3.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20220126140537022912",
+        "name": "Chicken Pop Salted Egg \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140537022912/photo/222769c9_ed41845813f.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140537022912/detail/222769c9_ed41845813f.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20220126140538014545",
+        "name": "Chicken Pop Black Pepper \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140538014545/photo/6ac039c7_5d8816c132d.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140538014545/detail/6ac039c7_5d8816c132d.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 12
+    }, {
+      "ID": "IDCAT20220126140535015552",
+      "name": "WAIKI Rice Box",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20220126140536016410",
+        "name": "Chicken Pop Barbeque \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140536016410/photo/afcd0975_3c568fd9625.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140536016410/detail/afcd0975_3c568fd9625.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20220126140537018454",
+        "name": "Chicken Pop Teriyaki \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140537018454/photo/1a3a56a8_7b507516bc3.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140537018454/detail/1a3a56a8_7b507516bc3.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20220126140537022912",
+        "name": "Chicken Pop Salted Egg \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140537022912/photo/222769c9_ed41845813f.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140537022912/detail/222769c9_ed41845813f.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20220126140538014545",
+        "name": "Chicken Pop Black Pepper \u0026 Veggie - Rice Box",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20220126140538014545/photo/6ac039c7_5d8816c132d.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20220126140538014545/detail/6ac039c7_5d8816c132d.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+        "campaignName": "10% off",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 11
+    }, {
+      "ID": "IDCAT20211207085959019849",
+      "name": "Aigo",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090000020527",
+        "name": "Seo Goo Lalapan Ikan Laut Bakar/Goreng (Banyak Pilihan Ikan)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090000020527/photo/4a4aac07_5e40df724ba.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090000020527/detail/4a4aac07_5e40df724ba.webp"
+        ],
+        "description": "Ikan Laut+Nasi dibakar dengan bumbu Bikin Doyan",
+        "modifierGroups": [],
+        "sortOrder": 7,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090001023678",
+        "name": "Seo Goo Udang Saos Telur asin",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090001023678/photo/5242e957_ff2cdac04a8.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090001023678/detail/5242e957_ff2cdac04a8.webp"
+        ],
+        "description": "Nasi Putih + Udang goreng saos telur asin",
+        "modifierGroups": [],
+        "sortOrder": 6,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090002029142",
+        "name": "Nasi Goreng Do Yan Seafood",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090002029142/photo/59e9233b_11b2e447aaf.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090002029142/detail/59e9233b_11b2e447aaf.webp"
+        ],
+        "description": "Nasi goreng seafood  yang bikin doyan dengan isian telur, cumi, udang dan masih bisa ditambah dengan toping",
+        "modifierGroups": [],
+        "sortOrder": 5,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090004019767",
+        "name": "Seo Goo Cumi Saus Telur Asin",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090004019767/photo/b031427f_bb8709e4e00.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090004019767/detail/b031427f_bb8709e4e00.webp"
+        ],
+        "description": "Nasi putih + Cumi goreng tepung saus telur asin",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090005024740",
+        "name": "Seo Goo Cumi Crispy (Banyak Pilihan Saos)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090005024740/photo/ba094858_f4282e50a8b.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090005024740/detail/ba094858_f4282e50a8b.webp"
+        ],
+        "description": "Nasi Kotak Cumi (Calmari Rice Box)",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090007031824",
+        "name": "Seo Goo Udang (Banyak Pilihan Saos)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090007031824/photo/e52484f4_c61a14249f7.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090007031824/detail/e52484f4_c61a14249f7.webp"
+        ],
+        "description": "Nasi Kotak Udang (Prawns Rice Box)",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090006058290",
+        "name": "Seo Goo Lalapan Ikan Nila Bakar/Goreng",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090006058290/photo/b06980e6_a9a4dc09d63.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090006058290/detail/b06980e6_a9a4dc09d63.webp"
+        ],
+        "description": "Nasi Kotak Ikan Bakar (Grilled Fish Rice Box)",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 10
+    }, {
+      "ID": "IDCAT20211207090008011903",
+      "name": "Chingu",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090010010104",
+        "name": "Oppa Cumi ( Cumi Utuh Crispy)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090010010104/photo/4f26b747_5b7568648ea.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090010010104/detail/4f26b747_5b7568648ea.webp"
+        ],
+        "description": "Per Tusuk - Cumi Utuh Goreng Krispi korea (Crispy Fried Squid)",
+        "modifierGroups": [],
+        "sortOrder": 6,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090011029814",
+        "name": "Unnie Cumi Crispy",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090011029814/photo/e7fb457e_5321446a93d.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090011029814/detail/e7fb457e_5321446a93d.webp"
+        ],
+        "description": "Cumi Goreng Krispi (Crispy Fried Calamari)",
+        "modifierGroups": [],
+        "sortOrder": 5,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090012027202",
+        "name": "Oppa Cumi Bae Sah ( Cumi dan kerang Masak Saos - 2 Porsi)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090012027202/photo/b4a46b46_af001f0b18b.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090012027202/detail/b4a46b46_af001f0b18b.webp"
+        ],
+        "description": "Cumi Masak Saos (Cooked Calamari With Sauce)",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090014018712",
+        "name": "Oppa Gurita Crispy",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090014018712/photo/b83b91c7_785bdb7bb3a.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090014018712/detail/b83b91c7_785bdb7bb3a.webp"
+        ],
+        "description": "Gurita Goreng Krispi (Crispy Fried Octopus)",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090015039154",
+        "name": "Oppa Gurita Bae Sah ( Gurita dan kerang Masak Saos - 2 Porsi)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090015039154/photo/3a0ff398_f78d1745c54.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090015039154/detail/3a0ff398_f78d1745c54.webp"
+        ],
+        "description": "Gurita Masak Saos (Cooked Octopus With Sauce)",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211223080714017059",
+        "name": "Aegi Kepiting (Crispy Baby Kepiting Rajungan)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211223080714017059/photo/45d199f4_67656741dcc.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211223080714017059/detail/45d199f4_67656741dcc.webp"
+        ],
+        "description": "Kepiting Muda Goreng Krispi (Crispy Fried Baby Crab)",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090009019785",
+        "name": "Oppa Cham Po Ryeo (Crispy Gurita, Cumi \u0026 Udang)",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090009019785/photo/5eefdacf_7dd55e6fe6d.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090009019785/detail/5eefdacf_7dd55e6fe6d.webp"
+        ],
+        "description": "Goreng Krispi Campur Gurita, Udang, \u0026 Cumi (Octopus, ..)",
+        "modifierGroups": [],
+        "sortOrder": 7,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 9
+    }, {
+      "ID": "IDCAT20211207090015019679",
+      "name": "Seerameon Ikan",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090016033177",
+        "name": "Ikan Kerapu Siram Saos",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090016033177/photo/1a00fe16_7296f872d67.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090016033177/detail/1a00fe16_7296f872d67.webp"
+        ],
+        "description": "Ikan Kerapu Siram Saos Asam Manis / telur asin",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090018013134",
+        "name": "Ikan Kakap Siram Saos",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090018013134/photo/992a34b0_488920e58ab.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090018013134/detail/992a34b0_488920e58ab.webp"
+        ],
+        "description": "Ikan Kakap Siram Saos Asam Manis / telur asin",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 8
+    }, {
+      "ID": "IDCAT20211207090018028687",
+      "name": "Samjang Gami ( Extra Pedas )",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090019021431",
+        "name": "Sambal Gami Terong \u0026 Kol",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090019021431/photo/ff5af492_010ade75960.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090019021431/detail/ff5af492_010ade75960.webp"
+        ],
+        "description": "Sambal gami kol dan terong dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 8,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090020023569",
+        "name": "Sambal Gami Baby Crab + Free Nasi",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090020023569/photo/ebce971d_a170f6ac729.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090020023569/detail/ebce971d_a170f6ac729.webp"
+        ],
+        "description": "Sambal gami Baby Crab dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 7,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090021013491",
+        "name": "Sambal Gami Ikan Laut + Free Nasi",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090021013491/photo/4288ba6d_c41a25e4a97.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090021013491/detail/4288ba6d_c41a25e4a97.webp"
+        ],
+        "description": "Sambal gami Ikan Laut dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 6,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090023021449",
+        "name": "Sambal Gami Kerang + Free Nasi",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090023021449/photo/99a483cd_10ffdfab349.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090023021449/detail/99a483cd_10ffdfab349.webp"
+        ],
+        "description": "Sambal gami kerang dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 5,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090025037503",
+        "name": "Sambal Gami Cumi + free nasi",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090025037503/photo/77078311_893baac22d0.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090025037503/detail/77078311_893baac22d0.webp"
+        ],
+        "description": "Sambal gami cumi dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090026031064",
+        "name": "Sambal Gami Udang + free nasi",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090026031064/photo/46f54bee_75041b2f375.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090026031064/detail/46f54bee_75041b2f375.webp"
+        ],
+        "description": "Sambal gami udang dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211221140426018491",
+        "name": "Sambal Gami Gurita + Free Nasi",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211221140426018491/photo/38d5e84a_8713a979563.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211221140426018491/detail/38d5e84a_8713a979563.webp"
+        ],
+        "description": "Sambal gami gurita dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090024046069",
+        "name": "Sambal Gami Ikan Nila + Free Nasi",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090024046069/photo/144d4a5f_1ea2c1cbdc4.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090024046069/detail/144d4a5f_1ea2c1cbdc4.webp"
+        ],
+        "description": "Sambal gami Ikan Nila dimasak diatas cobek tanah liat",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 7
+    }, {
+      "ID": "IDCAT20211207090031015060",
+      "name": "Omo",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090032022376",
+        "name": "Omo Kerang Hijau Bakar",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090032022376/photo/e6c22932_04c27cdc4d8.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090032022376/detail/e6c22932_04c27cdc4d8.webp"
+        ],
+        "description": "Kerang hijau bakar",
+        "modifierGroups": [],
+        "sortOrder": 10,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090033027603",
+        "name": "Omo Cumi Sosis (3 tusuk)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090033027603/photo/076a89d6_c4c65357f1e.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090033027603/detail/076a89d6_c4c65357f1e.webp"
+        ],
+        "description": "Cumi Bakar Madu Sosis (Honey Grilled Calamari With Sau..)",
+        "modifierGroups": [],
+        "sortOrder": 9,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090034033995",
+        "name": "Omo Gurita Bakar (2 tusuk)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090034033995/photo/7ff3068b_e1420016fb8.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090034033995/detail/7ff3068b_e1420016fb8.webp"
+        ],
+        "description": "Per tusuk 2-3 ekor - Gurita Bakar Madu (Honey Grilled Octopus)",
+        "modifierGroups": [],
+        "sortOrder": 8,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090036011568",
+        "name": "Omo Udang Bakar (3 tusuk)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090036011568/photo/5c90bebb_92a4857b29c.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090036011568/detail/5c90bebb_92a4857b29c.webp"
+        ],
+        "description": "Udang Bakar Madu (Honey Grilled Prawns)",
+        "modifierGroups": [],
+        "sortOrder": 6,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090040028356",
+        "name": "Omo Bujangnim Ikan (personal - banyak pilihan Ikan)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090040028356/photo/a6791d37_e8ebaf9bcaa.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090040028356/detail/a6791d37_e8ebaf9bcaa.webp"
+        ],
+        "description": "Ikan Bakar Madu Ukuran S - Untuk Sendirian",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090035020643",
+        "name": "Omo Lobster Jumbo",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090035020643/photo/a5c0bbdc_b8609f0dd6a.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090035020643/detail/a5c0bbdc_b8609f0dd6a.webp"
+        ],
+        "description": "Lobster dengan berat 400-550gr di Bakar dengan bumbu spesial madu(Honey Grilled Lobster)",
+        "modifierGroups": [],
+        "sortOrder": 7,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090037028483",
+        "name": "Omo Cumi Isi",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090037028483/photo/3963fc5a_1c38b7cbbcd.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090037028483/detail/3963fc5a_1c38b7cbbcd.webp"
+        ],
+        "description": "Per Tusuk - Cumi Bakar Madu (Honey Grilled Squid)",
+        "modifierGroups": [],
+        "sortOrder": 5,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090038030869",
+        "name": "Omo Sajangnim Ikan Bakar ( 3-4 porsi)",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090038030869/photo/3067d907_86ff9a93180.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090038030869/detail/3067d907_86ff9a93180.webp"
+        ],
+        "description": "Ikan Bakar Madu Ukuran L - Untuk 3-4 Orang (Honey..",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090042012688",
+        "name": "Omo Isanim Ikan Bakar (2-3 porsi)",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090042012688/photo/0c0477c8_5db94d3d5e1.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090042012688/detail/0c0477c8_5db94d3d5e1.webp"
+        ],
+        "description": "Ikan Bakar Madu Ukuran M - Untuk 2-3 Orang (Honey..)",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090044027951",
+        "name": "Omo Sajangnim Lobster bakar",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090044027951/photo/55d4fd55_deb570278e8.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090044027951/detail/55d4fd55_deb570278e8.webp"
+        ],
+        "description": "1 ekor Lobster Kipas Bakar (Honey Grilled Slipper Lobster)",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 5
+    }, {
+      "ID": "IDCAT20211207090044019008",
+      "name": "Saranghaeyo",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090048012301",
+        "name": "Massigetda (3mix kerang, kepiting - 2 Porsi)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090048012301/photo/efde67f5_0303a4a0109.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090048012301/detail/efde67f5_0303a4a0109.webp"
+        ],
+        "description": "3 Kerang Campur + Kepiting (Cooked Seafood -)",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090049041755",
+        "name": "Yaebo (3mix kerang, kepiting, cumi - 3 porsi)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090049041755/photo/48b8b5f1_963a30daa09.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090049041755/detail/48b8b5f1_963a30daa09.webp"
+        ],
+        "description": "3 Kerang Campur + Kepiting + Cumi (Cooked Seafood -)",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211221140458018830",
+        "name": "Yeppo (3 mix kerang- 2 porsi )",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211221140458018830/photo/4a3c1f17_87ddf87064f.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211221140458018830/detail/4a3c1f17_87ddf87064f.webp"
+        ],
+        "description": "3 Kerang Campur (Cooked Seafood - 3 Mix Of Scallops ...",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090045016910",
+        "name": "Saranghaeyo (3mix kerang, lobster, kepiting, cumi, gurita - 3-4 Porsi)",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090045016910/photo/457c9cd0_dccf4019a8f.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090045016910/detail/457c9cd0_dccf4019a8f.webp"
+        ],
+        "description": "3 Kerang Campur + 1-2 Lobster Kipas  + Kepiting + Cumi + Gurita",
+        "modifierGroups": [],
+        "sortOrder": 5,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090046028179",
+        "name": "Bae Go Pa (3mix kerang, lobster, kepiting, cumi, gurita , 4-5 porsi)",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090046028179/photo/1b2eba8b_5a86cfff37f.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090046028179/detail/1b2eba8b_5a86cfff37f.webp"
+        ],
+        "description": "3 Kerang Campur + 2-3 Lobster Kipas atau 1 ekor lobster 400gr  + 2 Kepiting + Cumi",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 4
+    }, {
+      "ID": "IDCAT20211207090050011375",
+      "name": "Chaeso",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090051020394",
+        "name": "Cah Kangkung",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090051020394/photo/dae5bfda_1d7d0b52daf.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090051020394/detail/dae5bfda_1d7d0b52daf.webp"
+        ],
+        "description": "Cah kangkung",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090052023138",
+        "name": "Pakcoy Saos Tiram",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090052023138/photo/5a78894e_5c26a7bf6ab.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090052023138/detail/5a78894e_5c26a7bf6ab.webp"
+        ],
+        "description": "Pakcoy Saos Tiram",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 3
+    }, {
+      "ID": "IDCAT20211207090054013772",
+      "name": "Drink (Ice / Hot)",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090054058152",
+        "name": "Coconut Yakult",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090054058152/photo/11697f65_eb15ee90200.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090054058152/detail/11697f65_eb15ee90200.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 6,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090055041395",
+        "name": "Lemon Tea (Hot / Ice)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090055041395/photo/35989e0f_23464170f28.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090055041395/detail/35989e0f_23464170f28.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 5,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090056035687",
+        "name": "Tropical Mojito",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090056035687/photo/3d12065b_974e21c86b4.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090056035687/detail/3d12065b_974e21c86b4.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 4,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090058011112",
+        "name": "Milo Creamy (Hot/Ice)",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090058011112/photo/b4b1a208_fae96159ee7.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090058011112/detail/b4b1a208_fae96159ee7.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090059041963",
+        "name": "Orange Mojito",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090059041963/photo/b31cc05b_4ac1bf4f7ce.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090059041963/detail/b31cc05b_4ac1bf4f7ce.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090101030976",
+        "name": "Mango Mojito",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090101030976/photo/42a4aafe_0e335dec395.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090101030976/detail/42a4aafe_0e335dec395.webp"
+        ],
+        "description": "",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 2
+    }, {
+      "ID": "IDCAT20211207090101029282",
+      "name": "Addon",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090102024948",
+        "name": "Seo Goo",
+        "available": true,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090102024948/photo/d816e898_db6e03b4ba8.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090102024948/detail/d816e898_db6e03b4ba8.webp"
+        ],
+        "description": "Nasi putih punel pulen",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 1
+    }, {
+      "ID": "IDCAT20211207090027016289",
+      "name": "Sea Monster",
+      "available": true,
+      "items": [{
+        "ID": "IDITE20211207090028011791",
+        "name": "Ikan kakap Giant Bakar + free 4 Nasi putih",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090028011791/photo/aaa95e37_d4e2522402f.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090028011791/detail/aaa95e37_d4e2522402f.webp"
+        ],
+        "description": "Berat ikan 1200gr-1500gr di bakar ala doyan",
+        "modifierGroups": [],
+        "sortOrder": 3,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090029019658",
+        "name": "Giant Squid Crispy",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090029019658/photo/45edd34c_c4804da3b1d.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090029019658/detail/45edd34c_c4804da3b1d.webp"
+        ],
+        "description": "1 ekor cumi utuh berat 400-700gr di goreng crispy ala Doyan",
+        "modifierGroups": [],
+        "sortOrder": 2,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }, {
+        "ID": "IDITE20211207090031019724",
+        "name": "Giant Lobster Bakar + free 2 nasi putih",
+        "available": false,
+        "priceInMinorUnit": 0,
+        "imgHref": "https://d1sag4ddilekf6.azureedge.net/compressed/items/IDITE20211207090031019724/photo/59bca564_11f4ec24b7f.jpeg",
+        "images": [
+          "https://d1sag4ddilekf6.azureedge.net/compressed_webp/items/IDITE20211207090031019724/detail/59bca564_11f4ec24b7f.webp"
+        ],
+        "description": "berat 1200gr Lobster yang dibakar dengan bumbu yang bikin doyan",
+        "modifierGroups": [],
+        "sortOrder": 1,
+        "campaignID": "",
+        "campaignName": "",
+        "discountedPriceInMin": 0,
+        "priceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "discountedPriceV2": {
+          "amountInMinor": 0,
+          "amountDisplay": ""
+        },
+        "_currency": {
+          "code": "IDR",
+          "symbol": "Rp",
+          "exponent": 2,
+          "ISOSymbol": ""
+        }
+      }],
+      "sortOrder": 6
+    }],
+    "menuMeta": {
+      "orderValueLimit": 200000000
+    },
+    "campaigns": [{
+      "ID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+      "campaignLevel": "category",
+      "campaignType": "percentage",
+      "startTime": {
+        "seconds": 1654144200
+      },
+      "endTime": {
+        "seconds": 1655051400
+      },
+      "name": "10% off WAIKI Rice Box",
+      "priority": "low",
+      "status": "ongoing",
+      "tcDetails": ["Available at selected outlets", "Valid 2022-06-02 11:30 to 2022-06-12 23:30"],
+      "nameForMex": "Diskon 10% untuk WAIKI Rice Box",
+      "businessTag": 1
+    }, {
+      "ID": "6-C2XDGABBT3BYGT-C3LBJA4XRTV2BE-62982070",
+      "campaignLevel": "delivery_fee",
+      "campaignType": "delivery",
+      "startTime": {
+        "seconds": 1654144200
+      },
+      "endTime": {
+        "seconds": 1655051400
+      },
+      "name": "Rp2.000 off delivery fee with Rp30.000 min. order",
+      "priority": "low",
+      "status": "ongoing",
+      "tcDetails": ["Available at selected outlets", "Minimum order of Rp30.000",
+        "Discount capped at Rp2.000", "Valid 2022-06-02 11:30 to 2022-06-12 23:30"
+      ],
+      "nameForMex": "Diskon Rp2.000 untuk ongkir dengan pesanan min. Rp30.000",
+      "businessTag": 1
+    }, {
+      "ID": "SSCSubMLGPremium1-C3KUCRCKWBBDJE-91568841",
+      "campaignLevel": "delivery_fee",
+      "campaignType": "delivery",
+      "startTime": {
+        "seconds": 1653114600
+      },
+      "endTime": {
+        "seconds": 1924698360
+      },
+      "name": "Rp5.000 off delivery fee",
+      "priority": "low",
+      "status": "ongoing",
+      "tcDetails": ["Available at selected outlets", "Discount capped at Rp5.000",
+        "Valid 2022-05-21 13:30 to 2030-12-28 21:26"
+      ],
+      "nameForMex": "Surabaya SSC  Normal Delivery Fee",
+      "businessTag": 2
+    }]
+  }
+}
