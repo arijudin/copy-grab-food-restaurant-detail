@@ -9,6 +9,16 @@ function ProductCard(props) {
     if (!available) return <div className='absolute top-0 right-0 bottom-0 left-0 bg-white z-[1] opacity-50 rounded-[5px] pointer-events-none cursor-default'></div>
   }
 
+  const formatter = (val) => {
+    const newVal = (parseInt(val)).toLocaleString('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0,
+    }); 
+
+    return newVal
+  }
+  
   return (
       <div className="bg-white rounded-[5px] p-4 hover:p-[15px] hover:border hover:border-[#10b65b] flex gap-4 h-full relative">
         {checkAvailable(data.available)}
@@ -38,7 +48,18 @@ function ProductCard(props) {
               }}>
             </p>
           </div>
-          <div className='flex items-end justify-end h-full'>
+          <div className='flex items-end justify-between h-full'>
+            <div className=''>
+              { data.discounted >= 1 ?
+                <div className='flex items-center text-xs text-[#b7b7b7]'>
+                  <span className='text-[#f38621] font-medium bg-[#f386214d] px-1 py-[2px] rounded-sm'>{ `Save ${formatter(data.discounted.toString().slice(0, -2))}` }</span>
+                  <span className='line-through ml-1'>{ data.price }</span>
+                </div> : null
+              }
+              <div className='font-medium'>
+                {data.discountedPrice}
+              </div>
+            </div>
             <div className='w-[30px] h-[30px] inline-flex items-center justify-center bg-[#00b14f] rounded-sm'>
               <Plus 
                 className='w-4 h-4'

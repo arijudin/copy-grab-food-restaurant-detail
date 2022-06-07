@@ -63,8 +63,10 @@ const getTimeDelivery = (openHours) => {
         console.log(error)
       }
 
-      return deliveryTimeArr;
+      return deliveryTimeArr ? deliveryTimeArr : [];
     }
+
+    return []
 }
 
 const getDateDelivery = () => {

@@ -53,26 +53,6 @@ const RestaurantDetail = () => {
 
   return (
     <>
-      {/* <div>
-        <style jsx>{
-          `
-            .duration .times:last-child:before {
-              content: '-';
-              margin: 0 2px;
-            }
-          `
-        }</style>
-        { deliveryTime.map((time, key) => (
-          <div key={key} className='flex duration'>
-            { time.map((splice, i) => (
-              <div key={i} className='times'>
-                <span>{splice}</span>              
-              </div>
-            )) }
-          </div>
-        ))
-      }
-      </div> */}
       { restaurant.merchant_info ?
         <div className='flex gap-[5px] mt-4 mb-[6px]'>
           <PreveredIcon />
@@ -158,7 +138,7 @@ const RestaurantDetail = () => {
                 leaveFrom='opacity-100 h-full'
                 leaveTo='opacity-0 h-0'
               >
-                <Listbox.Options className='absolute z-[3] mt-1 max-h-60 w-full overflow-auto rounded-md bg-white text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
+                <Listbox.Options className='absolute z-[4] mt-1 max-h-60 w-full overflow-auto rounded-md bg-white text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
                   onBlurCapture={() => setIsOpenDate(false)}>
                   { deliveryDate.map((delivery, key) => (
                     <Listbox.Option
@@ -228,7 +208,7 @@ const RestaurantDetail = () => {
                 leaveFrom='opacity-100 h-full'
                 leaveTo='opacity-0 h-0'
               >
-                <Listbox.Options className='absolute z-[3] mt-1 max-h-60 w-full overflow-auto rounded-md bg-white text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
+                <Listbox.Options className='absolute z-[4] mt-1 max-h-60 w-full overflow-auto rounded-md bg-white text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
                   onBlurCapture={() => setIsOpenTime(false)}>
                   { deliveryTime.map((delivery, key) => (
                     <Listbox.Option
