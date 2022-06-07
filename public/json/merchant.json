@@ -1,0 +1,150 @@
+{
+  "pageRestaurantDetail" : {
+    "ID": "6-C2XDGABBT3BYGT",
+    "name": "Do Yan Seafood - Sumbersekar",
+    "cuisine": "Seafood,Snack",
+    "photoHref": "https://d1sag4ddilekf6.azureedge.net/compressed/merchants/6-C2XDGABBT3BYGT/hero/03c7f74481b8467eaee275265311a7bb_1628499015316487688.png",
+    "timeZone": "Asia/Jakarta",
+    "ETA": 0,
+    "description": "",
+    "openingHours": {
+      "open": true,
+      "displayedHours": "13:00-24:00",
+      "sun": "13:00-22:00",
+      "mon": "13:00-22:00",
+      "tue": "13:00-22:00",
+      "wed": "13:00-22:00",
+      "thu": "13:00-22:00",
+      "fri": "13:00-22:00",
+      "sat": "13:00-22:00",
+      "tempClosed": false
+    },
+    "common": {
+      "closed": "Closed",
+      "discount": "Save {{price}}",
+      "distance": "{{distance, intlNumber}}",
+      "free": "Free",
+      "min": "mins",
+      "now": "Now",
+      "opening_hours": "Opening Hours",
+      "promotion": "Promotions",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "word_divider": " "
+    },
+    "isIntegrated": true,
+    "phoneNumber": "",
+    "distanceInKm": 67.519,
+    "section": "IDSEC20211207085954019959",
+    "sectionOpenHours": {
+      "sun": "00:00-23:59",
+      "mon": "00:00-23:59",
+      "tue": "00:00-23:59",
+      "wed": "00:00-23:59",
+      "thu": "00:00-23:59",
+      "fri": "00:00-23:59",
+      "sat": "00:00-23:59"
+    },
+    "latlng": {
+      "latitude": -7.92223,
+      "longitude": 112.574471
+    },
+    "address": {
+      "acronym": "",
+      "combinedAddress": "",
+      "combinedCity": "",
+      "house": "",
+      "street": "",
+      "suburb": "",
+      "postcode": "",
+      "city": "",
+      "cityID": 0,
+      "state": "",
+      "country": "",
+      "countryID": 0
+    },
+    "merchant_info": {
+      "preferred": "Preferred Merchant"
+    },
+    "campaigns": [{
+      "ID": "6-C2XDGABBT3BYGT-C3LBJBBUJJEJTJ-97809433",
+      "campaignLevel": "category",
+      "campaignType": "percentage",
+      "startTime": {
+        "seconds": 1654144200
+      },
+      "endTime": {
+        "seconds": 1655051400
+      },
+      "name": "10% off WAIKI Rice Box",
+      "priority": "low",
+      "status": "ongoing",
+      "tcDetails": ["Available at selected outlets", "Valid 2022-06-02 11:30 to 2022-06-12 23:30"],
+      "nameForMex": "Diskon 10% untuk WAIKI Rice Box",
+      "businessTag": 1
+    }, {
+      "ID": "6-C2XDGABBT3BYGT-C3LBJA4XRTV2BE-62982070",
+      "campaignLevel": "delivery_fee",
+      "campaignType": "delivery",
+      "startTime": {
+        "seconds": 1654144200
+      },
+      "endTime": {
+        "seconds": 1655051400
+      },
+      "name": "Rp2.000 off delivery fee with Rp30.000 min. order",
+      "priority": "low",
+      "status": "ongoing",
+      "tcDetails": ["Available at selected outlets", "Minimum order of Rp30.000",
+        "Discount capped at Rp2.000", "Valid 2022-06-02 11:30 to 2022-06-12 23:30"
+      ],
+      "nameForMex": "Diskon Rp2.000 untuk ongkir dengan pesanan min. Rp30.000",
+      "businessTag": 1
+    }, {
+      "ID": "SSCSubMLGPremium1-C3KUCRCKWBBDJE-91568841",
+      "campaignLevel": "delivery_fee",
+      "campaignType": "delivery",
+      "startTime": {
+        "seconds": 1653114600
+      },
+      "endTime": {
+        "seconds": 1924698360
+      },
+      "name": "Rp5.000 off delivery fee",
+      "priority": "low",
+      "status": "ongoing",
+      "tcDetails": ["Available at selected outlets", "Discount capped at Rp5.000",
+        "Valid 2022-05-21 13:30 to 2030-12-28 21:26"
+      ],
+      "nameForMex": "Surabaya SSC  Normal Delivery Fee",
+      "businessTag": 2
+    }],
+    "rating": 4.5,
+    "voteCount": 79,
+    "status": "ACTIVE",
+    "deliverBy": "GRAB",
+    "radius": 10000,
+    "promo": {
+      "hasPromo": true,
+      "description": "PASTIDISKONG 20rb | HEMAT35GT 35% | HEMAT30GT 30%"
+    },
+    "sofConfiguration": {
+      "enabled": true,
+      "calculationMode": "FixedFee",
+      "fixFeeInMin": 300000,
+      "fixFeeForDisplay": {
+        "amountInMinor": 300000,
+        "amountDisplay": "Rp3.000"
+      },
+      "tips": "Order fee of Rp3.000 applies for this restaurant.",
+      "iconContent": {
+        "title": "Order fee",
+        "amountForDisplay": {
+          "amountInMinor": 300000,
+          "amountDisplay": "Rp3.000"
+        },
+        "desc": "Thank you for choosing GrabFood as your delivery partner. This fee allows us to keep improving our service on delivering your favourite food."
+      }
+    }
+  }
+}

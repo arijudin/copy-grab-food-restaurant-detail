@@ -8,6 +8,7 @@ import axios from 'axios'
 import Link from 'next/link'
 import { CevronRight } from '../utils/icomoon'
 import { classNames } from '../utils/functions'
+import RestaurantDetail from '../components/details/restaurant'
 
 const menusURL = '/api/menus'
 
@@ -98,6 +99,7 @@ const Home = () => {
                 ))} 
                 </ol>
               </nav>
+              <RestaurantDetail />
             </div>
           </div>
         </div>
@@ -113,7 +115,7 @@ const Home = () => {
                     <Popover className='relative' key={id}>
                       {({ open }) => (
                         <>
-                          <Dialog as='div' className='fixed z-[2] inset-0 overflow-y-auto'
+                          <Dialog as='div' className='fixed z-[1] inset-0 overflow-y-auto'
                             open={open}
                             onClose={() => setOverlay}
                             initialFocus={selectionRef} >

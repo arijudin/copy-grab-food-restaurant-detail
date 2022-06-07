@@ -54,9 +54,87 @@ const CevronRight = (props) => {
   )
 }
 
+const PreveredIcon = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill={`${props.fill ?? 'currentColor'}`} className={`${props.className ?? ''}`} width="16" height="16" viewBox="0 0 16 16">
+        <g fill="none" fillRule="nonzero">
+            <path fill="#00B14F" d="M5.377 14.332a2.896 2.896 0 0 1-3.71-3.71 2.896 2.896 0 0 1 0-5.245 2.896 2.896 0 0 1 3.71-3.71 2.896 2.896 0 0 1 5.246 0 2.896 2.896 0 0 1 3.71 3.71 2.896 2.896 0 0 1 0 5.246 2.896 2.896 0 0 1-3.71 3.71 2.896 2.896 0 0 1-5.246 0z"/>
+            <path fill="#FFF" d="M9.888 5.078l1.26.815-3.694 5.701L4.861 9.49l.945-1.165 1.297 1.053z"/>
+        </g>
+    </svg>
+  )
+}
+
+const StarIcon = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill={`${props.fill ?? 'currentColor'}`} className={`${props.className ?? ''}`} width="16" height="16" viewBox="0 0 16 16">
+        <g fill="none" fillRule="evenodd">
+            <path d="M0 0h16v16H0z"/>
+            <path fill="#F7C942" stroke="#F7C942" strokeLinecap="square" strokeLinejoin="round" d="M8 2l1.854 3.66L14 6.249l-3 2.849.708 4.023L8 11.22l-3.708 1.9L5 9.097l-3-2.85 4.146-.586z"/>
+        </g>
+    </svg>
+  )
+}
+
+const PromoTagIcon = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill={`${props.fill ?? 'currentColor'}`} className={`${props.className ?? ''}`} width="24" height="24" viewBox="0 0 24 24">
+        <g fill="#00B14F" fillRule="nonzero">
+            <path d="M12.746 2.53l-9.95 9.383a.972.972 0 0 0-.062 1.333l3.739 3.984 3.73 3.974c.376.379.937.393 1.315.06l10.139-9.56a.5.5 0 1 1 .686.727l-10.152 9.572c-.784.692-1.946.663-2.708-.105l-3.74-3.984-3.751-3.997c-.685-.788-.656-1.953.106-2.72l10.139-9.56a.5.5 0 0 1 .417-.131l8.701 1.303a.5.5 0 0 1 .424.455l.504 6.374a.5.5 0 0 1-.997.079l-.472-5.978-8.068-1.209z"/>
+            <path d="M15.622 9.934c-.88-.072-1.545-.812-1.466-1.667.078-.851.86-1.467 1.737-1.395.88.072 1.544.812 1.466 1.666-.078.851-.861 1.467-1.737 1.396zm.19-2.066c-.344-.028-.634.2-.66.49-.027.286.212.551.551.579.344.028.634-.2.66-.49.026-.285-.212-.55-.552-.579z"/>
+        </g>
+    </svg>
+  )
+}
+
+const InfoIcon = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill={`${props.fill ?? 'currentColor'}`} className={`${props.className ?? ''}`} width="16" height="16" viewBox="0 0 16 16">
+        <g fill="none" fillRule="evenodd">
+            <path d="M0 0h16v16H0z"/>
+            <circle cx="7" cy="7" r="7" stroke="#9A9A9A" transform="translate(1 1)"/>
+            <path fill="#9A9A9A" d="M7 4h2v2H7zM7 7h2v5H7z"/>
+        </g>
+    </svg>
+  )
+}
+
+const ClockIcon = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill={`${props.fill ?? 'currentColor'}`} className={`${props.className ?? ''}`} width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" fillRule="evenodd">
+            <path d="M0 0h24v24H0z"/>
+            <circle cx="12" cy="12" r="9" stroke="#676767" strokeLinecap="square"/>
+            <path fill="#676767" fillRule="nonzero" d="M17.41 11.5v1H11.5V6.59h1v4.91z"/>
+        </g>
+    </svg>
+  )
+}
+
+const CalendarIcon = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" className={`${props.className ?? ''}`} width="24" height="24" viewBox="0 0 24 24" >
+      <rect opacity="0.01" width="24" height="24" fill="#D8D8D8"/>
+      <rect x="3" y="5" width="18" height="15" rx="1.5" stroke="#676767" strokeWidth="2" strokeLinecap="square"/>
+      <path d="M8 3V7" stroke="#676767" strokeWidth="2" strokeLinecap="round"/>
+      <path d="M16 3V7" stroke="#676767" strokeWidth="2" strokeLinecap="round"/>
+      <rect x="6" y="10" width="2" height="2" fill="#676767"/>
+      <rect x="11" y="10" width="2" height="2" fill="#676767"/>
+      <rect x="16" y="10" width="2" height="2" fill="#676767"/>
+      <rect x="6" y="14" width="2" height="2" fill="#676767"/>
+    </svg>
+  )
+}
+
 export {
   Plus,
   CartDefault,
   GeoIcon,
-  CevronRight
+  CevronRight,
+  PreveredIcon,
+  StarIcon,
+  PromoTagIcon,
+  InfoIcon,
+  ClockIcon,
+  CalendarIcon
 }
