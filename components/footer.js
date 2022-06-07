@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Icon from '../utils/Icons'
+import Icon from '../utils/icons'
 import { Fragment, useState, useRef } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { classNames } from '../utils/functions'
