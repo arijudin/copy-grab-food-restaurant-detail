@@ -7,37 +7,23 @@ import { Fragment } from 'react'
 import axios from 'axios'
 import Link from 'next/link'
 import { CevronRight } from '../utils/icomoon'
-import { classNames } from '../utils/functions'
+import { useWindowSize } from '../utils/functions'
 import RestaurantDetail from '../components/details/restaurant'
 import { Link as ScrollLink, animateScroll as scroll} from 'react-scroll'
 
 const menusURL = '/api/menus'
 
-const pages = [
-  {
-    position: 1,
-    name: 'Home',
-    href: 'https://food.grab.com/id/en/',
-    current: false,
-  }, {
-    position: 2,
-    name: 'Restaurant',
-    href: 'https://food.grab.com/id/en/restaurants',
-    current: false,
-  }, {
-    position: 3,
-    name: 'Do Yan Seafood - Sumbersekar',
-    href: 'https://food.grab.com',
-    current: true,
-  }
-]
-
 const Home = () => {
 	const [categories, setCategories] = useState([])
+  const [windowSize, setWindowSize] = useState([])
   const [overlay, setOverlay] = useState(false)
+  const [scroll, setScroll] = useState(1)
+  const [showScrollCategories, setShowScrollCategories] = useState(true)
   const selectionRef = useRef(null)
   const scrollBar = useRef()
-
+  
+  
+  const winSize = useWindowSize()
   useEffect(() => {
     const getMenus = async () => {
       const res = await axios.get(`${menusURL}`)
@@ -58,7 +44,27 @@ const Home = () => {
       await getMenus()
     }
     fetchDataMenu()
-  }, [])
+
+    if (winSize) {
+      setWindowSize(winSize)
+
+      const onScroll = () => {      
+        if (winSize.width <= 420) {
+          setShowScrollCategories(false)
+          if (window.scrollY > 320) {
+            setShowScrollCategories(true)
+          } else {
+            setShowScrollCategories(false)
+          }
+        } else {
+          setShowScrollCategories(true)
+        }
+      }
+
+      document.addEventListener('scroll', onScroll)
+    }
+
+  }, [scroll, setScroll, winSize])
 
   return (
     <Layout className='bg-[#f7f7f7]'>
@@ -67,39 +73,7 @@ const Home = () => {
         </Head>
         <div className='bg-white'>
           <div className='w-full max-w-7xl my-0 mx-auto'>
-            <div className='px-3 md:px-9 lg:px-10 pt-12 pb-4'>
-              <nav aria-label='Breadcrumb'>
-                <ol role='list' className='flex items-center space-x-2'>
-                  {pages.map((page, key) => (
-                  <li key={key}>
-                    <div className='flex items-center'>
-                      { key != 0 ?
-                        <CevronRight className='w-4 h-4' /> : null
-                      }
-                      { !page.current ?
-                        <Link href={page.href} passHref>
-                          <a
-                            className={ classNames(
-                              page.current ? 'text-[#1c1c1c] select-none' : 'text-[#00a5cf] hover:text-[#1ebd60]',
-                              key == 0 ? '' : 'ml-2',
-                              'text-base transition-all duration-300 ease-in-out tracking-[-0.64px]'
-                            )}
-                            aria-current={page.current ? 'page' : undefined}
-                          >
-                            {page.name}
-                          </a>
-                        </Link> :
-                        <span className='text-[#1c1c1c] ml-2 text-base hover:cursor-auto tracking-[-0.64px]'
-                          aria-current={page.current ? 'page' : undefined}
-                        >
-                          {page.name}
-                        </span>
-                      }
-                    </div>
-                  </li>
-                ))} 
-                </ol>
-              </nav>
+            <div className='px-3 md:px-9 lg:px-10 pt-10 lg:pt-12 pb-4'>
               <RestaurantDetail />
             </div>
           </div>
@@ -113,9 +87,9 @@ const Home = () => {
                 }
               `
             }</style>
-            <div className='bg-white text-[#1a1a1a] sticky top-[88px] z-[3] shadow-custom'>
-              <div className='w-full max-w-7xl my-0 mx-auto'>
-                <div className='px-3 md:px-9 lg:px-10 h-[66px] flex items-end relative'>
+            <div className='bg-white text-[#1a1a1a] lg:sticky top-10 lg:top-[88px] z-[3] shadow-custom'>
+              <div className={`w-full max-w-7xl my-0 mx-auto fixed lg:relative top-10 lg:top-0 transition-opacity duration-200 ease-linear bg-white ${showScrollCategories ? 'opacity-100 z-[9] shadow-custom' : 'opacity-0'}`}>
+                <div className='px-3 md:px-9 lg:px-10 h-12 lg:h-[66px] flex items-end relativebg-white'>
                   <style>{
                     `
                       .scroll-tabs .active {
@@ -127,10 +101,10 @@ const Home = () => {
                       }
                     `
                   }</style>
-                  <div className='flex gap-0 w-full overflow-hidden scroll-tabs px-8 z-[1]'>
+                  <div className='flex gap-0 w-full overflow-hidden scroll-tabs px-4 lg:px-8 z-[1]'>
                     { categories.map((row, key) => (
                       <ScrollLink 
-                      className='tabs px-6 py-[14px] border-b-2 border-transparent whitespace-nowrap text-[#676767] hover:cursor-pointer hover:text-[#1ebd60] transition-all duration-300 ease-linear'
+                      className={`tabs text-sm lg:text-base px-3 lg:px-6 py-[14px] border-b-2 border-transparent whitespace-nowrap text-[#676767] hover:cursor-pointer hover:text-[#1ebd60] transition-all duration-300 ease-linear ${windowSize && windowSize.width <= 420 ? 'h-12' : ''}`}
                       ref={scrollBar}
                       key={key}
                       to={row.ID}
@@ -143,11 +117,11 @@ const Home = () => {
                       </ScrollLink>
                     ))}
                   </div>
-                  <div className='flex w-full justify-between absolute left-0 bottom-0 px-8'>
-                    <span className='bg-white h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
+                  <div className='flex w-full justify-between absolute left-0 bottom-0 px-0 lg:px-8'>
+                    <span className='bg-white h-10 lg:h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
                       <CevronRight className='flex-none rotate-180' />
                     </span>
-                    <span className='bg-white h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
+                    <span className='bg-white h-10 lg:h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
                       <CevronRight className='flex-none' />
                     </span>
                   </div>
@@ -156,15 +130,15 @@ const Home = () => {
             </div>
           </>
           <div className='w-full max-w-7xl my-0 mx-auto'>
-            <div className='px-3 md:px-9 lg:px-10 py-[72px]'>
+            <div className='px-3 md:px-9 lg:px-10 py-6 lg:py-[72px]'>
               { categories.map((row, key) => (
-                <section key={key} className='mb-[72px] last:mb-0' id={row.ID}>
-                  <h2 className='text-[#1c1c1c] font-medium text-4xl mb-12'>
+                <section key={key} className='mb-3 lg:mb-[72px] last:mb-0 bg-white lg:bg-transparent -mx-3 lg:mx-0 px-3 lg:px-0 py-6 lg:py-0' id={row.ID}>
+                  <h2 className='text-[#1c1c1c] font-medium text-xl lg:text-4xl mb-6 lg:mb-12'>
                     {row.name}
                   </h2>
-                  <div className='grid grid-cols-3 gap-6'>
+                  <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 divide-y'>
                     { row.items.map((item, id) => (
-                      <Popover className='relative' key={id}>
+                      <Popover className={`relative lg:pt-0 ${id > 0 ? 'pt-3' : ''}`} key={id}>
                         {({ open }) => (
                           <>
                             <Dialog as='div' className='fixed z-[1] inset-0 overflow-y-auto'
@@ -186,7 +160,7 @@ const Home = () => {
                             <Popover.Button
                               className='focus:outline-none focus-visible:ring-0 relative w-full h-full'
                               onClick={() => (setOverlay)}
-                              ref={selectionRef}>
+                              ref={selectionRef} >
                               <ProductCard
                                 name={item.name}
                                 description={item.description}
@@ -206,7 +180,7 @@ const Home = () => {
                               leaveFrom='opacity-100 translate-y-0'
                               leaveTo='opacity-0 translate-y-1'
                             >
-                              <Popover.Panel className='absolute left-0 right-3 bottom-0 z-10 mt-3 -translate-y-[18px] transform' ref={selectionRef}>
+                              <Popover.Panel className='absolute left-0 right-3 bottom-0 z-[11] mt-3 -translate-y-[2px] lg:-translate-y-[18px] transform' ref={selectionRef}>
                                 <style jsx>{
                                   `
                                     .shadow-custom {
@@ -257,10 +231,10 @@ const Home = () => {
               We&#39;re always working to get the most accurate information.
               <Link href={'#'} passHref>
                 <a className='text-[#00a5cf] hover:text-[#23bddb] transition-all duration-300 ease-linear px-[2px]'>
-                  Let us
+                  Let us know
                 </a>
               </Link>
-              know if you come across anything that&#39;s outdated!
+              if you come across anything that&#39;s outdated!
             </div>
           </div>
         </div>

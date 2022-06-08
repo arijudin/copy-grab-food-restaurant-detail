@@ -86,14 +86,40 @@ const getDateDelivery = () => {
           dateName = days[newDate.getDay()],
           monthName = month[newDate.getMonth()]
 
-    deliveryDateArr[index] = `${dateName}, ${newDate.getDay()} ${monthName.toLowerCase()}`
+    deliveryDateArr[index] = `${dateName}, ${newDate.getDate()} ${monthName.toLowerCase()}`
   }
 
   return deliveryDateArr;
 }
 
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    
+      window.addEventListener("resize", handleResize);
+     
+      handleResize();
+    
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+  return windowSize;
+}
+
 export {
     classNames,
     getTimeDelivery,
-    getDateDelivery
+    getDateDelivery,
+    useWindowSize
 }

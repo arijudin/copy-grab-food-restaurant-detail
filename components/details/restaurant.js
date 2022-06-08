@@ -2,9 +2,30 @@ import { Fragment, useState, useEffect } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import axios from 'axios'
 import { PreveredIcon, StarIcon, PromoTagIcon, InfoIcon, ClockIcon, CevronRight, CalendarIcon } from '../../utils/icomoon'
-import { getTimeDelivery, getDateDelivery } from '../../utils/functions'
+import { getTimeDelivery, getDateDelivery, useWindowSize, classNames } from '../../utils/functions'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const restaurantDetailsURL = '/api/restaurant-details'
+
+const pages = [
+  {
+    position: 1,
+    name: 'Home',
+    href: 'https://food.grab.com/id/en/',
+    current: false,
+  }, {
+    position: 2,
+    name: 'Restaurant',
+    href: 'https://food.grab.com/id/en/restaurants',
+    current: false,
+  }, {
+    position: 3,
+    name: 'Do Yan Seafood - Sumbersekar',
+    href: 'https://food.grab.com',
+    current: true,
+  }
+]
 
 const RestaurantDetail = () => {
 	const [restaurant, setRestaurant] = useState([])
@@ -12,8 +33,11 @@ const RestaurantDetail = () => {
   const [deliveryTime, setDeliveryTime] = useState([])
   const [selectedDate, setSelectedDate] = useState([])
   const [selectedTime, setSelectedTime] = useState([])
+  const [windowSize, setWindowSize] = useState([])
   const [isOpenDate, setIsOpenDate] = useState(false)
   const [isOpenTime, setIsOpenTime] = useState(false)
+  
+  const winSize = useWindowSize()
 
   useEffect(() => {
     const getRestaurantDetail = async () => {
@@ -49,63 +73,106 @@ const RestaurantDetail = () => {
       await getRestaurantDetail()
     }
     fetchDataRestaurant()
-  }, [])
+
+    if (winSize) {
+      setWindowSize(winSize)
+    }
+  }, [winSize])
 
   return (
     <>
-      { restaurant.merchant_info ?
-        <div className='flex gap-[5px] mt-4 mb-[6px]'>
-          <PreveredIcon />
-          <span className='text-xs font-medium text-[#00b14f]'>{ restaurant.merchant_info.preferred }</span>
+      { windowSize.width <= 420 ?
+        <div className='-mx-3 h-[230px] bg-cover bg-no-repeat bg-center' 
+          style={{ backgroundImage: `url(${restaurant.photoHref})` }}>
         </div> : null
       }
-      <h1 className='text-4xl font-medium leading-[48px] mb-[2px]'>
-        { restaurant.name }
-      </h1>
-      <div className='text-[#676767] text-sm my-2'>
-        { restaurant.cuisine }
-      </div>
-      <div className='flex items-center text-sm text-[#676767]'>
-        <div className='flex items-center gap-[10px] mr-11'>
-          <StarIcon />
-          { restaurant.rating }
-        </div>
-        <div className=''>
-          { `${restaurant.distanceInKm} km` }
-        </div>
-      </div>
-      { restaurant.common ? 
-        <div className='flex items-center text-sm text-[#676767] my-2'>
-          <div className='font-medium mr-[42px]'>
-            { restaurant.common.opening_hours }
-          </div>
-          <div className=''>
-            { `${restaurant.common.today}` }&nbsp;&nbsp;{ `${restaurant.openingHours.displayedHours}` }
-          </div>
-        </div> : null
-      }
-      { restaurant.campaigns ? 
-        <div className='flex text-sm'>
-          <div className=''>
-            { restaurant.campaigns.slice(0, 2).map((campaign) => (
-              <div className='flex items-center' key={campaign.ID}>
-                <PromoTagIcon />
-                <span className='ml-2 mr-4'>{ campaign.name }</span>
+      <div className='mt-6 mb-4 lg:my-0'>
+        <nav aria-label='Breadcrumb'>
+          <ol role='list' className='flex items-center space-x-2'>
+            {pages.map((page, key) => (
+            <li key={key}>
+              <div className='flex items-center'>
+                { key != 0 ?
+                  <CevronRight className='w-4 h-4' /> : null
+                }
+                { !page.current ?
+                  <Link href={page.href} passHref>
+                    <a
+                      className={ classNames(
+                        page.current ? 'text-[#1c1c1c] select-none' : 'text-[#00a5cf] hover:text-[#1ebd60]',
+                        key == 0 ? '' : 'ml-2',
+                        'text-base leading-[22px] transition-all duration-300 ease-in-out tracking-[-0.64px]'
+                      )}
+                      aria-current={page.current ? 'page' : undefined}
+                    >
+                      {page.name}
+                    </a>
+                  </Link> :
+                  <span className='text-[#1c1c1c] ml-2 text-base hover:cursor-auto tracking-[-0.64px]'
+                    aria-current={page.current ? 'page' : undefined}
+                  >
+                    {page.name}
+                  </span>
+                }
               </div>
-            ))}
+            </li>
+          ))} 
+          </ol>
+        </nav>
+        { restaurant.merchant_info ?
+          <div className='flex gap-[5px] mt-4 mb-[6px]'>
+            <PreveredIcon />
+            <span className='text-xs font-medium text-[#00b14f]'>{ restaurant.merchant_info.preferred }</span>
+          </div> : null
+        }
+        <h1 className='text-2xl lg:text-4xl font-medium lg:leading-[48px] mb-[2px]'>
+          { restaurant.name }
+        </h1>
+        <div className='text-[#676767] text-sm my-2'>
+          { restaurant.cuisine }
+        </div>
+        <div className='flex items-center text-sm text-[#676767]'>
+          <div className='flex items-center gap-[10px] mr-11'>
+            <StarIcon />
+            { restaurant.rating }
           </div>
-          <div className='text-[#00a5cf] font-medium hover:cursor-pointer self-end pb-[2px]'>
-            See More
+          <div className=''>
+            { `${restaurant.distanceInKm} km` }
           </div>
-        </div> : null
-      }
-      { restaurant.sofConfiguration ?
-        <div className='flex items-center text-sm'>
-          <InfoIcon className='w-6 h-6' />
-          <span className='ml-2 mr-4'>{ restaurant.sofConfiguration.tips }</span>
-        </div> : null
-      }
-      <div className='grid grid-cols-3 gap-4 mt-3 mb-6'>
+        </div>
+        { restaurant.common ? 
+          <div className='flex items-center text-sm text-[#676767] my-2'>
+            <div className='font-medium mr-[42px]'>
+              { restaurant.common.opening_hours }
+            </div>
+            <div className=''>
+              { `${restaurant.common.today}` }&nbsp;&nbsp;{ `${restaurant.openingHours.displayedHours}` }
+            </div>
+          </div> : null
+        }
+        { restaurant.campaigns ? 
+          <div className='flex text-sm flex-col lg:flex-row'>
+            <div className=''>
+              { restaurant.campaigns.slice(0, 2).map((campaign) => (
+                <div className='flex items-center' key={campaign.ID}>
+                  <PromoTagIcon />
+                  <span className='ml-2 mr-4'>{ campaign.name }</span>
+                </div>
+              ))}
+            </div>
+            <div className='text-[#00a5cf] font-medium hover:cursor-pointer lg:self-end pb-[2px]'>
+              See More
+            </div>
+          </div> : null
+        }
+        { restaurant.sofConfiguration ?
+          <div className='flex items-center flex-row-reverse lg:flex-row text-xs justify-end lg:justify-start lg:text-sm bg-[#f9fbfd] lg:bg-white py-[10px] px-[15px] lg:p-0 rounded lg:rounded-none'>
+            <InfoIcon className='w-4 h-4 lg:w-6 lg:h-6' />
+            <span className='lg:ml-2 mr-4'>{ restaurant.sofConfiguration.tips }</span>
+          </div> : null
+        }
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-4 lg:mt-3 lg:mb-6'>
         <div>
           <style jsx>{
             `

@@ -20,9 +20,9 @@ function ProductCard(props) {
   }
   
   return (
-      <div className="bg-white rounded-[5px] p-4 hover:p-[15px] hover:border hover:border-[#10b65b] flex gap-4 h-full relative">
+      <div className="bg-white rounded-[5px] p-0 lg:p-4 lg:hover:p-[15px] lg:hover:border hover:border-[#10b65b] flex gap-4 h-full relative">
         {checkAvailable(data.available)}
-        <div className='h-[120px] w-[120px] flex-none rounded-[5px] overflow-hidden'>
+        <div className='h-[97px] w-[97px] md:h-[130px] md:w-[130px] lg:h-[120px] lg:w-[120px] flex-none rounded-[5px] overflow-hidden'>
           <Image
             className='flex-none'
             src={data.imgHref}
@@ -48,19 +48,19 @@ function ProductCard(props) {
               }}>
             </p>
           </div>
-          <div className='flex items-end justify-between h-full'>
-            <div className=''>
+          <div className='flex items-end justify-between h-full mt-3 lg:mt-0'>
+            <div className='mt-3 lg:mt-0'>
               { data.discounted >= 1 ?
-                <div className='flex items-center text-xs text-[#b7b7b7]'>
-                  <span className='text-[#f38621] font-medium bg-[#f386214d] px-1 py-[2px] rounded-sm'>{ `Save ${formatter(data.discounted.toString().slice(0, -2))}` }</span>
-                  <span className='line-through ml-1'>{ data.price }</span>
+                <div className='flex items-center text-[#b7b7b7]'>
+                  <span className='text-[#f38621] text-[10px] leading-[10px] lg:leading-4 lg:text-xs font-medium bg-[#f386214d] px-[2px] lg:px-1 py-[2px] rounded-sm'>{ `Save ${formatter(data.discounted.toString().slice(0, -2))}` }</span>
+                  <span className='line-through ml-1 text-xs'>{ data.price }</span>
                 </div> : null
               }
-              <div className='font-medium'>
+              <div className='font-medium px-[6px] lg:px-0'>
                 {data.discountedPrice}
               </div>
             </div>
-            <div className='w-[30px] h-[30px] inline-flex items-center justify-center bg-[#00b14f] rounded-sm'>
+            <div className='w-[30px] h-[30px] inline-flex items-center justify-center bg-[#00b14f] rounded-sm mx-[6px] lg:mx-0'>
               <Plus 
                 className='w-4 h-4'
                 fill='#ffffff'
