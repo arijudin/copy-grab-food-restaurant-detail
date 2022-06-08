@@ -11,8 +11,6 @@ import { classNames } from '../utils/functions'
 import RestaurantDetail from '../components/details/restaurant'
 import { Link as ScrollLink, animateScroll as scroll} from 'react-scroll'
 
-// import { Link, animateScroll as scroll } from "react-scroll"
-
 const menusURL = '/api/menus'
 
 const pages = [
@@ -38,6 +36,7 @@ const Home = () => {
 	const [categories, setCategories] = useState([])
   const [overlay, setOverlay] = useState(false)
   const selectionRef = useRef(null)
+  const scrollBar = useRef()
 
   useEffect(() => {
     const getMenus = async () => {
@@ -59,7 +58,6 @@ const Home = () => {
       await getMenus()
     }
     fetchDataMenu()
-
   }, [])
 
   return (
@@ -117,21 +115,41 @@ const Home = () => {
             }</style>
             <div className='bg-white text-[#1a1a1a] sticky top-[88px] z-[3] shadow-custom'>
               <div className='w-full max-w-7xl my-0 mx-auto'>
-                <div className='px-3 md:px-9 lg:px-10 h-[66px]'>
-                  <div className='flex gap-0 w-full overflow-hidden'>
+                <div className='px-3 md:px-9 lg:px-10 h-[66px] flex items-end relative'>
+                  <style>{
+                    `
+                      .scroll-tabs .active {
+                        font-family: Sanomat App Medium, sans-serif;
+                        color: #00b14f;
+                        font-weight: 500;
+                        transition: all .3s ease-linear;
+                        border-bottom: 2px solid #00b14f;
+                      }
+                    `
+                  }</style>
+                  <div className='flex gap-0 w-full overflow-hidden scroll-tabs px-8 z-[1]'>
                     { categories.map((row, key) => (
                       <ScrollLink 
-                        className='px-6 py-[14px] whitespace-nowrap text-[#676767] hover:cursor-pointer hover:text-[#1ebd60] transition-all duration-300 ease-linear'
-                        key={key}
-                        to={row.ID}
-                        spy={true}
-                        smooth={true}
-                        offset={-158}
-                        duration={600}
+                      className='tabs px-6 py-[14px] border-b-2 border-transparent whitespace-nowrap text-[#676767] hover:cursor-pointer hover:text-[#1ebd60] transition-all duration-300 ease-linear'
+                      ref={scrollBar}
+                      key={key}
+                      to={row.ID}
+                      spy={true}
+                      smooth={true}
+                      offset={-158}
+                      duration={600}
                       >
                         {row.name}
                       </ScrollLink>
                     ))}
+                  </div>
+                  <div className='flex w-full justify-between absolute left-0 bottom-0 px-8'>
+                    <span className='bg-white h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
+                      <CevronRight className='flex-none rotate-180' />
+                    </span>
+                    <span className='bg-white h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
+                      <CevronRight className='flex-none' />
+                    </span>
                   </div>
                 </div>
               </div>
