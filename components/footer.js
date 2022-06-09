@@ -165,7 +165,7 @@ const Footer = () => {
                               <Icon icon='arrow-down-dark' className='text-base text-[#363a45]' />
                             </Disclosure.Button>
                             <Disclosure.Panel>
-                              <ul role='list' className='mt-4 mb-12'>
+                              <ul role='list' className='mt-4 mb-0 lg:mb-12'>
                                 {row.children.map((item) => (
                                   <li key={ item.name } className='leading-6'>
                                     <Link href={ item.href } passHref>
