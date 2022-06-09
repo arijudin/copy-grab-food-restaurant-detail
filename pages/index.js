@@ -100,10 +100,16 @@ const Home = () => {
                 .shadow-custom {
                   box-shadow: 0 4px 6px 0 rgb(28 28 28 / 6%);
                 }
+
+                @media(max-width: 420px) {
+                  .shadow-custom_sm {
+                    box-shadow: 0 4px 6px 0 rgb(28 28 28 / 6%);
+                  }
+                }
               `
             }</style>
-            <div className={`bg-white text-[#1a1a1a] lg:sticky top-10 lg:top-[88px] z-[3] ${ windowSize <= 420 ? 'shadow-custom' : ''}`}>
-              <div className={`w-full max-w-7xl my-0 mx-auto fixed lg:relative top-10 lg:top-0 transition-opacity duration-200 ease-linear bg-white ${ windowSize <= 420 ? 'shadow-custom' : ''} ${showScrollCategories ? 'opacity-100 z-[9]' : 'opacity-0'}`}>
+            <div className={`bg-white text-[#1a1a1a] lg:sticky top-10 lg:top-[88px] z-[3] shadow-custom`}>
+              <div className={`w-full max-w-7xl my-0 mx-auto fixed lg:relative top-10 lg:top-0 transition-opacity duration-200 ease-linear bg-white shadow-custom_sm ${showScrollCategories ? 'opacity-100 z-[9]' : 'opacity-0'}`}>
                 <div className='px-8 md:px-9 lg:px-10 h-12 lg:h-[66px] flex items-end relative bg-white'>
                   <style>{
                     `
