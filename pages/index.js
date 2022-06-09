@@ -139,7 +139,7 @@ const Home = () => {
                       }
                     `
                   }</style>
-                  <div className='flex gap-0 w-full overflow-hidden scroll-tabs px-0 lg:px-4 z-[1]'>
+                  <div className='flex gap-0 w-full overflow-y-auto md:overflow-y-hidden lg:overflow-y-hidden scroll-tabs px-0 lg:px-4 z-[1]'>
                     <div className='flex scroll-tabs_inner transition-transform duration-500'>
                       { categories.map((row, key) => (
                         <ScrollLink 
