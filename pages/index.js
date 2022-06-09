@@ -138,9 +138,13 @@ const Home = () => {
                         background: linear-gradient(270deg, #FFFFFF 37.25%, rgba(255, 255, 255, 0) 100%);
                       }
 
+                      .no-scrollbar::-webkit-scrollbar {
+                        display: none;
+                      }
+
                       .no-scrollbar {
-                        -ms-overflow-style: none; /* IE and Edge */
-                        scrollbar-width: none; /* Firefox */
+                        -ms-overflow-style: none;
+                        scrollbar-width: none;
                       }
                     `
                   }</style>
