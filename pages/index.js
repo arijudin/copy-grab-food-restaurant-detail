@@ -137,9 +137,14 @@ const Home = () => {
                         right: 26px;
                         background: linear-gradient(270deg, #FFFFFF 37.25%, rgba(255, 255, 255, 0) 100%);
                       }
+
+                      .no-scrollbar {
+                        -ms-overflow-style: none; /* IE and Edge */
+                        scrollbar-width: none; /* Firefox */
+                      }
                     `
                   }</style>
-                  <div className='flex gap-0 w-full overflow-y-auto md:overflow-y-hidden lg:overflow-y-hidden scroll-tabs px-0 lg:px-4 z-[1]'>
+                  <div className='flex gap-0 w-full overflow-y-auto md:overflow-y-hidden lg:overflow-y-hidden .no-scrollbar scroll-tabs px-0 lg:px-4 z-[1]'>
                     <div className='flex scroll-tabs_inner transition-transform duration-500'>
                       { categories.map((row, key) => (
                         <ScrollLink 
