@@ -144,8 +144,8 @@ const Home = () => {
                       }
                     `
                   }</style>
-                  <div className='flex gap-0 w-full overflow-y-auto md:overflow-y-hidden lg:overflow-y-hidden .no-scrollbar scroll-tabs px-0 lg:px-4 z-[1]'>
-                    <div className='flex scroll-tabs_inner transition-transform duration-500'>
+                  <div className='flex gap-0 w-full overflow-y-auto md:overflow-y-hidden lg:overflow-y-hidden no-scrollbar scroll-tabs px-0 lg:px-4 z-[1]'>
+                    <div className='flex scroll-tabs_inner transition-transform duration-500 no-scrollbar'>
                       { categories.map((row, key) => (
                         <ScrollLink 
                         className={`tabs text-sm lg:text-base px-3 lg:px-6 py-[14px] border-b-2 border-transparent whitespace-nowrap text-[#676767] hover:cursor-pointer hover:text-[#1ebd60] transition-all duration-300 ease-linear ${windowSize && windowSize.width <= 420 ? 'h-12' : ''}`}

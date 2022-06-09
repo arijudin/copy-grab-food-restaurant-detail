@@ -107,19 +107,16 @@ const RestaurantDetail = () => {
       }
       <div className='mt-6 mb-4 lg:my-0'>
         <nav aria-label='Breadcrumb'>
-          <ol role='list' className='flex items-center space-x-2'>
+          <ol role='list' className='flex flex-wrap items-center space-x-2 last:space-x-0'>
             {pages.map((page, key) => (
             <li key={key}>
               <div className='flex items-center'>
-                { key != 0 ?
-                  <CevronRight className='w-4 h-4' /> : null
-                }
                 { !page.current ?
                   <Link href={page.href} passHref>
                     <a
                       className={ classNames(
                         page.current ? 'text-[#1c1c1c] select-none' : 'text-[#00a5cf] hover:text-[#1ebd60]',
-                        key == 0 ? '' : 'ml-2',
+                        key != (pages.length - 1) ? 'mr-2' : '',
                         'text-base transition-all duration-300 ease-in-out tracking-[-0.64px] leading-[24.77px]'
                       )}
                       aria-current={page.current ? 'page' : undefined}
@@ -127,11 +124,14 @@ const RestaurantDetail = () => {
                       {page.name}
                     </a>
                   </Link> :
-                  <span className='text-[#1c1c1c] ml-2 text-base hover:cursor-auto tracking-[-0.64px] leading-[24.77px]]'
+                  <span className='text-[#1c1c1c] text-base hover:cursor-auto tracking-[-0.64px] leading-[24.77px]]'
                     aria-current={page.current ? 'page' : undefined}
                   >
                     {page.name}
                   </span>
+                }
+                { key != (pages.length - 1) ?
+                  <CevronRight className='w-3 h-3 lg:w-4 lg:h-4 mr-2' /> : null
                 }
               </div>
             </li>
