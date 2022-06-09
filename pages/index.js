@@ -59,10 +59,16 @@ const Home = () => {
         } else {
           setShowScrollCategories(true)
         }
+
+        const nav = document.querySelector('.tabs.active');
+        if (nav) {
+          // nav.scrollIntoView({ block: 'start' })
+        }
       }
 
       document.addEventListener('scroll', onScroll)
     }
+
 
   }, [scroll, setScroll, winSize])
 
@@ -87,16 +93,15 @@ const Home = () => {
                 }
               `
             }</style>
-            <div className='bg-white text-[#1a1a1a] lg:sticky top-10 lg:top-[88px] z-[3] shadow-custom'>
+            <div className={`bg-white text-[#1a1a1a] lg:sticky top-10 lg:top-[88px] z-[3] ${ showScrollCategories ? 'shadow-custom' : ''}`}>
               <div className={`w-full max-w-7xl my-0 mx-auto fixed lg:relative top-10 lg:top-0 transition-opacity duration-200 ease-linear bg-white ${showScrollCategories ? 'opacity-100 z-[9] shadow-custom' : 'opacity-0'}`}>
-                <div className='px-3 md:px-9 lg:px-10 h-12 lg:h-[66px] flex items-end relativebg-white'>
+                <div className='px-8 md:px-9 lg:px-10 h-12 lg:h-[66px] flex items-end relative bg-white'>
                   <style>{
                     `
                       .scroll-tabs .active {
                         font-family: Sanomat App Medium, sans-serif;
                         color: #00b14f;
                         font-weight: 500;
-                        transition: all .3s ease-linear;
                         border-bottom: 2px solid #00b14f;
                       }
                     `
@@ -117,8 +122,8 @@ const Home = () => {
                       </ScrollLink>
                     ))}
                   </div>
-                  <div className='flex w-full justify-between absolute left-0 bottom-0 px-0 lg:px-8'>
-                    <span className='bg-white h-10 lg:h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
+                  <div className='flex w-full justify-between absolute left-0 bottom-[2px] lg:bottom-0 px-0 lg:px-8'>
+                    <span className='bg-white h-10 lg:h-[52px] w-11 pr-3 flex items-center justify-center border-b-2 border-transparent z-[2]'>
                       <CevronRight className='flex-none rotate-180' />
                     </span>
                     <span className='bg-white h-10 lg:h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>

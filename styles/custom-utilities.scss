@@ -26,6 +26,16 @@
   src: local('Sanomat App Bold'), url('../styles/fonts/SanomatGrabApp/Sanomat Grab App-Bold.ttf') format('truetype');
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #ffffff;
+  background: #00b14f;
+}
+
+::selection {
+  color: #ffffff;
+  background: #00b14f;
+}
+
 html {
   font-family: 'Sanomat App Regular', sans-serif;
   font-weight: 400;
@@ -34,6 +44,10 @@ html {
   letter-spacing: normal;
   color: #1c1c1c;
   // -webkit-font-smoothing: antialiased;
+}
+
+.font-normal {
+  font-family: 'Sanomat App Regular', sans-serif;
 }
 
 .font-medium {

@@ -1,9 +1,8 @@
-import { Fragment, useState, useEffect } from 'react'
-import { Listbox, Transition } from '@headlessui/react'
+import { Fragment, useState, useEffect, useRef } from 'react'
+import { Listbox, Transition, Dialog } from '@headlessui/react'
 import axios from 'axios'
 import { PreveredIcon, StarIcon, PromoTagIcon, InfoIcon, ClockIcon, CevronRight, CalendarIcon } from '../../utils/icomoon'
 import { getTimeDelivery, getDateDelivery, useWindowSize, classNames } from '../../utils/functions'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const restaurantDetailsURL = '/api/restaurant-details'
@@ -36,8 +35,28 @@ const RestaurantDetail = () => {
   const [windowSize, setWindowSize] = useState([])
   const [isOpenDate, setIsOpenDate] = useState(false)
   const [isOpenTime, setIsOpenTime] = useState(false)
+  const [isOpenCampaign, setIsOpenCampaign] = useState(false)
+  const [isOpenInfo, setIsOpenInfo] = useState(false)
+  const initialFocusRef = useRef(null)
   
   const winSize = useWindowSize()
+
+  const closeModalPromo = () => {
+    setIsOpenCampaign(false)
+  }
+
+  const openModalPromo = () => {
+    setIsOpenCampaign(true)
+  }
+
+  const closeModalInfo = () => {
+    setIsOpenInfo(false)
+  }
+
+  const openModalInfo = () => {
+    setIsOpenInfo(true)
+  }
+
 
   useEffect(() => {
     const getRestaurantDetail = async () => {
@@ -101,14 +120,14 @@ const RestaurantDetail = () => {
                       className={ classNames(
                         page.current ? 'text-[#1c1c1c] select-none' : 'text-[#00a5cf] hover:text-[#1ebd60]',
                         key == 0 ? '' : 'ml-2',
-                        'text-base leading-[22px] transition-all duration-300 ease-in-out tracking-[-0.64px]'
+                        'text-base transition-all duration-300 ease-in-out tracking-[-0.64px] leading-[24.77px]'
                       )}
                       aria-current={page.current ? 'page' : undefined}
                     >
                       {page.name}
                     </a>
                   </Link> :
-                  <span className='text-[#1c1c1c] ml-2 text-base hover:cursor-auto tracking-[-0.64px]'
+                  <span className='text-[#1c1c1c] ml-2 text-base hover:cursor-auto tracking-[-0.64px] leading-[24.77px]]'
                     aria-current={page.current ? 'page' : undefined}
                   >
                     {page.name}
@@ -120,9 +139,9 @@ const RestaurantDetail = () => {
           </ol>
         </nav>
         { restaurant.merchant_info ?
-          <div className='flex gap-[5px] mt-4 mb-[6px]'>
+          <div className='flex items-center gap-[5px] mt-4 mb-[6px]'>
             <PreveredIcon />
-            <span className='text-xs font-medium text-[#00b14f]'>{ restaurant.merchant_info.preferred }</span>
+            <span className='text-xs leading-[18px] font-medium text-[#00b14f]'>{ restaurant.merchant_info.preferred }</span>
           </div> : null
         }
         <h1 className='text-2xl lg:text-4xl font-medium lg:leading-[48px] mb-[2px]'>
@@ -160,16 +179,193 @@ const RestaurantDetail = () => {
                 </div>
               ))}
             </div>
-            <div className='text-[#00a5cf] font-medium hover:cursor-pointer lg:self-end pb-[2px]'>
-              See More
-            </div>
+            { restaurant.campaigns.length > 2 ? 
+              <>
+                <div className='text-[#00a5cf] font-medium hover:cursor-pointer lg:self-end pb-[2px] inline-flex'>
+                  <span onClick={openModalPromo}>
+                    {`See ${restaurant.campaigns.length - 2} more`}
+                  </span>
+                </div>
+                
+                <Transition appear show={isOpenCampaign} as={Fragment}>
+                  <Dialog as="div" className="relative z-[100]" onClose={closeModalPromo} initialFocus={initialFocusRef}>
+                    <Transition.Child
+                      as={Fragment}
+                      enter="ease-out duration-300"
+                      enterFrom="opacity-0"
+                      enterTo="opacity-100"
+                      leave="ease-in duration-200"
+                      leaveFrom="opacity-100"
+                      leaveTo="opacity-0"
+                    >
+                      <div className="fixed inset-0 bg-[#1c1c1c80]" />
+                    </Transition.Child>
+                    <style> {
+                    `
+                      .modal {
+                        width: 456px;
+                        max-width: calc(100vw - 24px);
+                        max-height: 80vh;
+                      }
+                    `
+                    }</style>
+                    <div className="fixed inset-0 overflow-y-auto overflow-x-hidden">
+                      <div className="flex min-h-full items-center justify-center p-4 text-center">
+                        <Transition.Child
+                          as={Fragment}
+                          enter="ease-out duration-300"
+                          enterFrom="opacity-0 scale-95"
+                          enterTo="opacity-100 scale-100"
+                          leave="ease-in duration-200"
+                          leaveFrom="opacity-100 scale-100"
+                          leaveTo="opacity-0 scale-95"
+                        >
+                          <Dialog.Panel className="modal w-full transform overflow-y-auto overflow-hidden rounded-md bg-white py-[14px] lg:py-6 text-left align-middle shadow-xl transition-all">
+                            <div className='px-[14px] lg:px-6 relative'>
+                              <div className='absolute right-7 top-1'
+                                onClick={ closeModalPromo }
+                                ref={ initialFocusRef }>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <g fill="none" fillRule="evenodd">
+                                        <path d="M-4-4h24v24H-4z"/>
+                                        <g stroke="#676767" strokeWidth="2">
+                                            <path d="M15 1L1 15M15 15L1 1"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                              </div>
+                              <div className='-mx-1'>
+                                <Dialog.Title
+                                  as="h3"
+                                  className="text-[20px] leading-[1.4] font-medium text-gray-900 flex items-center px-1 mb-6"
+                                >
+                                  Promotions&nbsp;<PromoTagIcon />
+                                </Dialog.Title>
+                                <div className="px-1">
+                                  <div className='grid grid-cols-1 gap-[14px] lg:gap-6'>
+                                    { restaurant.campaigns.map((campaign, key) => (
+                                      <Fragment key={campaign.ID}>
+                                        <div className=''>
+                                          <div className='font-medium'>{ campaign.name }</div>
+                                          {
+                                            campaign.tcDetails.map((camp, id) => (
+                                              <div key={id} className='text-[#676767] text-sm'>
+                                                { `• ${camp}` }
+                                              </div>
+                                            ))
+                                          }
+                                        </div>
+                                        { restaurant.campaigns.length != (key + 1) ?
+                                          <div className='border-b border-[#f0efef]'></div> : null
+                                        }
+                                      </Fragment>
+                                    ))}
+                                    { restaurant.promo && restaurant.promo.hasPromo ?
+                                      <>
+                                        <div className='border-b border-[#f0efef]'></div>
+                                        <div className='font-medium'>
+                                          { restaurant.promo.description }
+                                        </div>
+                                      </> : null
+                                    }
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Dialog.Panel>
+                        </Transition.Child>
+                      </div>
+                    </div>
+                  </Dialog>
+                </Transition>
+              </> : null
+            }
           </div> : null
         }
         { restaurant.sofConfiguration ?
-          <div className='flex items-center flex-row-reverse lg:flex-row text-xs justify-end lg:justify-start lg:text-sm bg-[#f9fbfd] lg:bg-white py-[10px] px-[15px] lg:p-0 rounded lg:rounded-none'>
-            <InfoIcon className='w-4 h-4 lg:w-6 lg:h-6' />
-            <span className='lg:ml-2 mr-4'>{ restaurant.sofConfiguration.tips }</span>
-          </div> : null
+          <>
+            <div className='flex items-center flex-row-reverse lg:flex-row text-xs justify-end lg:justify-start lg:text-sm bg-[#f9fbfd] lg:bg-white py-[10px] px-[15px] lg:p-0 rounded lg:rounded-none'
+              onClick={openModalInfo}>
+              <span onClick={openModalInfo}>
+                <InfoIcon className='w-4 h-4 lg:w-6 lg:h-6' />
+              </span>
+              <span className='lg:ml-2 mr-4'>{ restaurant.sofConfiguration.tips }</span>
+            </div>
+
+            <Transition appear show={isOpenInfo} as={Fragment}>
+              <Dialog as="div" className="relative z-[100]" onClose={closeModalInfo} initialFocus={initialFocusRef}>
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0"
+                  enterTo="opacity-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100"
+                  leaveTo="opacity-0"
+                >
+                  <div className="fixed inset-0 bg-[#1c1c1c80]" />
+                </Transition.Child>
+                <style> {
+                `
+                  .modal {
+                    width: 456px;
+                    max-width: calc(100vw - 24px);
+                    max-height: 80vh;
+                  }
+
+                  @media(max-width: 420px) {
+                    .modal {
+                      width: 456px;
+                      max-width: 100%;
+                      max-height: 80vh;
+                      border-radius: 6px 6px 0 0;
+                    }
+                  }
+                `
+                }</style>
+                <div className="fixed inset-0 overflow-y-auto overflow-x-hidden">
+                  <div className="flex min-h-full items-end lg:items-center justify-center p-0 lg:p-4 text-center">
+                    <Transition.Child
+                      as={Fragment}
+                      enter="ease-out duration-300"
+                      enterFrom="opacity-0 scale-95"
+                      enterTo="opacity-100 scale-100"
+                      leave="ease-in duration-200"
+                      leaveFrom="opacity-100 scale-100"
+                      leaveTo="opacity-0 scale-95"
+                    >
+                      <Dialog.Panel className="modal w-full transform overflow-y-auto overflow-hidden rounded-md bg-white py-[14px] lg:py-6 text-left align-middle shadow-xl transition-all">
+                        <div className='px-[14px] lg:px-6 relative'>
+                          <div className='-mx-1'
+                            ref={ initialFocusRef }>
+                            <Dialog.Title
+                              as="h3"
+                              className="text-base font-medium leading-[1.4] text-gray-900 flex items-center justify-between px-1 mb-3"
+                            >
+                              <span>{ restaurant.sofConfiguration.iconContent.title }</span>
+                              <span className='text-[#676767] font-normal'>{ restaurant.sofConfiguration.iconContent.amountForDisplay.amountDisplay }</span>
+                            </Dialog.Title>
+                            <div className="px-1">
+                              <div className='text-[#676767] text-sm'>{ restaurant.sofConfiguration.iconContent.desc }</div>
+                            </div>
+                            <div className="px-1 mt-[14px] lg:mt-6">
+                              <button
+                                type="button"
+                                className="w-full h-12 inline-flex items-center justify-center rounded-md border border-[#00b14f] hover:border-[#1ebd60] bg-[#00b14f] hover:bg-[#1ebd60] px-4 py-2 text-sm font-bold text-white transition-all duration-300 ease-linear focus:outline-none"
+                                onClick={closeModalInfo}
+                              >
+                                Got it
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </Dialog.Panel>
+                    </Transition.Child>
+                  </div>
+                </div>
+              </Dialog>
+            </Transition>
+          </> : null
         }
       </div>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-4 lg:mt-3 lg:mb-6'>
@@ -183,7 +379,7 @@ const RestaurantDetail = () => {
             `
           }</style>
           <Listbox value={selectedDate} onChange={setSelectedDate}>
-            <div className='relative mt-1'>
+            <div className='relative mt-1 lg:mt-0'>
               <Listbox.Button className={`relative w-full cursor-pointer rounded-lg bg-white border hover:border-[#1ebd60] text-sm text-[#1c1c1c] h-12
               focus-visible:border-[#1ebd60] focus-visible:outline-offset-2 focus-visible:outline-[#1ebd60]/20 flex items-center ${isOpenDate ? 'border-[#1ebd60] outline-2 outline-offset-0 outline-[#1ebd60]/20' : 'border-[#f0efef]' }`}
               onClick={() => (setIsOpenDate(!isOpenDate), setIsOpenTime(false))}
@@ -192,7 +388,7 @@ const RestaurantDetail = () => {
                   <CalendarIcon />
                 </span>
                 <span className='flex truncate items-center justify-start'>
-                  <span>{`${selectedDate == 'Today' ? 'Delivery Date: Today' : selectedDate}`}</span>              
+                  <span>{`${selectedDate == 'Today' ? 'Deliver date: Today' : selectedDate}`}</span>              
                 </span>
                 <span className='pointer-events-none ml-[11px] mr-[11px] absolute right-0 top-0 bottom-0 flex items-center'>
                   <CevronRight className={`w-3 h-3 transition-all ease-in-out duration-300 ${ isOpenDate ? 'rotate-[270deg]' : 'rotate-90'}`} />
@@ -260,7 +456,7 @@ const RestaurantDetail = () => {
                 <span className='flex truncate items-center justify-start duration'>
                 { selectedTime.map((splice, i) => (
                   <div key={i} className={`times ${splice ? '' : 'hidden'}`}>
-                    <span>{`${splice == 'Now' ? 'Delivery Time: Now' : splice}`}</span>              
+                    <span>{`${splice == 'Now' ? 'Deliver time: Now' : splice}`}</span>              
                   </div>
                 )) }
                 </span>
