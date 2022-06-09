@@ -21,7 +21,16 @@ const Home = () => {
   const [showScrollCategories, setShowScrollCategories] = useState(true)
   const selectionRef = useRef(null)
   const scrollBar = useRef()
+
+  const scrollFirst = () => {
+    const scrollTabsInner = document.querySelector('.scroll-tabs_inner')
+    scrollTabsInner.style.transform = 'translate3d(-29%, 0px, 0px)'
+  }
   
+  const scrollLast = () => {
+    const scrollTabsInner = document.querySelector('.scroll-tabs_inner')
+    scrollTabsInner.style.transform = 'translate3d(0px, 0px, 0px)'
+  }
   
   const winSize = useWindowSize()
   useEffect(() => {
@@ -93,8 +102,8 @@ const Home = () => {
                 }
               `
             }</style>
-            <div className={`bg-white text-[#1a1a1a] lg:sticky top-10 lg:top-[88px] z-[3] ${ showScrollCategories ? 'shadow-custom' : ''}`}>
-              <div className={`w-full max-w-7xl my-0 mx-auto fixed lg:relative top-10 lg:top-0 transition-opacity duration-200 ease-linear bg-white ${showScrollCategories ? 'opacity-100 z-[9] shadow-custom' : 'opacity-0'}`}>
+            <div className={`bg-white text-[#1a1a1a] lg:sticky top-10 lg:top-[88px] z-[3] ${ windowSize <= 420 ? 'shadow-custom' : ''}`}>
+              <div className={`w-full max-w-7xl my-0 mx-auto fixed lg:relative top-10 lg:top-0 transition-opacity duration-200 ease-linear bg-white ${ windowSize <= 420 ? 'shadow-custom' : ''} ${showScrollCategories ? 'opacity-100 z-[9]' : 'opacity-0'}`}>
                 <div className='px-8 md:px-9 lg:px-10 h-12 lg:h-[66px] flex items-end relative bg-white'>
                   <style>{
                     `
@@ -104,29 +113,57 @@ const Home = () => {
                         font-weight: 500;
                         border-bottom: 2px solid #00b14f;
                       }
+
+                      .scroll-left,
+                      .scroll-right {
+                        position: relative;
+                      }
+
+                      .scroll-left:before,
+                      .scroll-right:before {
+                        content: ;
+                        position: absolute;
+                        width: 30px;
+                        top: 0;
+                        bottom: 0;
+                        z-index: 1;
+                      }
+
+                      .scroll-left:before {
+                        left: 20px;
+                        background: linear-gradient(90deg, #FFFFFF 37.25%, rgba(255, 255, 255, 0) 100%);
+                      }
+                      .scroll-right:before {
+                        right: 26px;
+                        background: linear-gradient(270deg, #FFFFFF 37.25%, rgba(255, 255, 255, 0) 100%);
+                      }
                     `
                   }</style>
-                  <div className='flex gap-0 w-full overflow-hidden scroll-tabs px-4 lg:px-8 z-[1]'>
-                    { categories.map((row, key) => (
-                      <ScrollLink 
-                      className={`tabs text-sm lg:text-base px-3 lg:px-6 py-[14px] border-b-2 border-transparent whitespace-nowrap text-[#676767] hover:cursor-pointer hover:text-[#1ebd60] transition-all duration-300 ease-linear ${windowSize && windowSize.width <= 420 ? 'h-12' : ''}`}
-                      ref={scrollBar}
-                      key={key}
-                      to={row.ID}
-                      spy={true}
-                      smooth={true}
-                      offset={-158}
-                      duration={600}
-                      >
-                        {row.name}
-                      </ScrollLink>
-                    ))}
+                  <div className='flex gap-0 w-full overflow-hidden scroll-tabs px-0 lg:px-4 z-[1]'>
+                    <div className='flex scroll-tabs_inner transition-transform duration-500'>
+                      { categories.map((row, key) => (
+                        <ScrollLink 
+                        className={`tabs text-sm lg:text-base px-3 lg:px-6 py-[14px] border-b-2 border-transparent whitespace-nowrap text-[#676767] hover:cursor-pointer hover:text-[#1ebd60] transition-all duration-300 ease-linear ${windowSize && windowSize.width <= 420 ? 'h-12' : ''}`}
+                        ref={scrollBar}
+                        key={key}
+                        to={row.ID}
+                        spy={true}
+                        smooth={true}
+                        offset={-158}
+                        duration={600}
+                        >
+                          {row.name}
+                        </ScrollLink>
+                      ))}
+                    </div>
                   </div>
-                  <div className='flex w-full justify-between absolute left-0 bottom-[2px] lg:bottom-0 px-0 lg:px-8'>
-                    <span className='bg-white h-10 lg:h-[52px] w-11 pr-3 flex items-center justify-center border-b-2 border-transparent z-[2]'>
+                  <div className='flex w-full justify-between absolute left-0 bottom-[2px] lg:bottom-[2px] px-0 lg:px-8'>
+                    <span className='bg-white h-10 lg:h-[52px] w-11 pr-3 flex items-center justify-center border-b-2 border-transparent z-[2] hover:cursor-pointer scroll-left'
+                      onClick={scrollLast}>
                       <CevronRight className='flex-none rotate-180' />
                     </span>
-                    <span className='bg-white h-10 lg:h-[52px] w-8 flex items-center justify-center border-b-2 border-transparent z-[2]'>
+                    <span className='bg-white h-10 lg:h-[52px] w-8 flex items-center justify-center z-[2] hover:cursor-pointer scroll-right'
+                      onClick={scrollFirst}>
                       <CevronRight className='flex-none' />
                     </span>
                   </div>

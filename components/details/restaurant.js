@@ -445,7 +445,7 @@ const RestaurantDetail = () => {
             `
           }</style>
           <Listbox value={selectedTime} onChange={setSelectedTime}>
-            <div className='relative mt-1'>
+            <div className='relative mt-1 lg:mt-0'>
               <Listbox.Button className={`relative w-full cursor-pointer rounded-lg bg-white border hover:border-[#1ebd60] text-sm text-[#1c1c1c] h-12
               focus-visible:border-[#1ebd60] focus-visible:outline-offset-2 focus-visible:outline-[#1ebd60]/20 flex items-center ${isOpenTime ? 'border-[#1ebd60] outline-2 outline-offset-0 outline-[#1ebd60]/20' : 'border-[#f0efef]' }`}
               onClick={() => (setIsOpenTime(!isOpenTime), setIsOpenDate(false))}
